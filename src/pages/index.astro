@@ -1,24 +1,19 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import divkLogo from "../assets/divk-logo.svg";
+import Layout from "../layouts/Layout.astro"
+import divkLogo from "../assets/divk-logo.svg"
+import Header from "../components/Header.astro"
 ---
 
 <Layout title="Werner Dienstleistungs eG">
   <main>
-    <img src={divkLogo.src} width="400" alt="DIVK Logo" />
-    <h1>Werner Dienstleistungs eG</h1>
+    <Header>Werner Dienstleistungs eG (In Gründung)</Header>
     <p>
-      Hohensachsener Str. 7<br />
-      69493 Hirschberg a. d. B.
+      Mitglied im: <br /><img src={divkLogo.src} width="300" alt="DIVK Logo" />
     </p>
-    <a href="./imprint">Impressum</a>
   </main>
+  <footer>
+    <p>
+      &copy; 2021 Werner Dienstleistungs eG | <a href="./imprint">Impressum</a>
+    </p>
+  </footer>
 </Layout>
-
-<style>
-  main {
-    margin: auto;
-    font-size: 20px;
-    line-height: 1.6;
-  }
-</style>

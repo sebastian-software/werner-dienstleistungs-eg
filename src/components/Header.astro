@@ -1,0 +1,12 @@
+---
+import { rootClass } from "./Header.css"
+
+interface Props {
+  as?: string
+}
+
+const { as } = Astro.props
+const HeaderTag = as || "h1"
+---
+
+<HeaderTag class={rootClass}><slot /></HeaderTag>

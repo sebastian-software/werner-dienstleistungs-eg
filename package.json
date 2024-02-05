@@ -16,6 +16,7 @@
     "typescript": "^5.3.3"
   },
   "devDependencies": {
+    "@vanilla-extract/css": "^1.14.1",
     "@vanilla-extract/vite-plugin": "^4.0.3",
     "prettier": "^3.2.5",
     "prettier-plugin-astro": "^0.13.0"

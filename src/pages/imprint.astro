@@ -1,34 +1,44 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro"
+import Layout from "../layouts/Layout.astro"
 ---
 
 <Layout title="Impressum">
   <main>
-    <h1>Impressum</h1>
-    <h2>Angaben gemäß § 5 TMG</h2>
+    <Header>Impressum</Header>
+    <Header as="h2">Angaben gemäß § 5 TMG</Header>
     <p>
-      Werner Dienstleistungs eG<br />Hohensachsener Str. 7<br />69493 Hirschberg
-      a. d. B.
+      Werner Dienstleistungs eG (In Gründung)<br />Hohensachsener Str. 7<br
+      />69493 Hirschberg a. d. B.
     </p>
-    <p>Genossenschaftsregister: ausstehend</p>
-    <p>Registergericht: -</p>
-    <p>Vertreten durch: Sebastian Werner</p>
-    <h2>Kontakt</h2>
+    <Header as="h2">Registergericht</Header>
+    <p>Genossenschaftsregister: <em>ausstehend</em></p>
+    <p>Registergericht: <em>ausstehend</em></p>
+    <Header as="h2">Vertreten durch</Header>
+    <p>Sebastian Werner</p>
+    <Header as="h2">Kontakt</Header>
     <p>
       Telefon: 0151-22631309<br />
       E-Mail: info@werner-dienstleistung.de
     </p>
-    <h2>Umsatzsteuer-ID</h2>
-    <p>Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz: -</p>
-    <h2>EU-Streitschlichtung</h2>
+    <Header as="h2">Umsatzsteuer-ID</Header>
+    <p>
+      Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz: <em
+        >ausstehend</em
+      >
+    </p>
+    <Header as="h2">EU-Streitschlichtung</Header>
     <p>
       Die Europäische Kommission stellt eine Plattform zur
       Online-Streitbeilegung (OS) bereit: https://ec.europa.eu/consumers/odr/.
       Unsere E-Mail-Adresse finden Sie oben im Impressum.
     </p>
-    <h2>Verbraucherstreitbeilegung/Universalschlichtungsstelle</h2>
-
-    Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor
-    einer Verbraucherschlichtungsstelle teilzunehmen.
+    <Header as="h2"
+      >Verbraucherstreitbeilegung/Universalschlichtungsstelle</Header
+    >
+    <p>
+      Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor
+      einer Verbraucherschlichtungsstelle teilzunehmen.
+    </p>
   </main>
 </Layout>
