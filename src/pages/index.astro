@@ -1,17 +1,24 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
+import divkLogo from "../assets/divk-logo.svg";
 ---
 
 <Layout title="Werner Dienstleistungs eG">
-	<main>
-		Hello
-	</main>
+  <main>
+    <img src={divkLogo.src} width="400" alt="DIVK Logo" />
+    <h1>Werner Dienstleistungs eG</h1>
+    <p>
+      Hohensachsener Str. 7<br />
+      69493 Hirschberg a. d. B.
+    </p>
+    <a href="./imprint">Impressum</a>
+  </main>
 </Layout>
 
 <style>
-	main {
-		margin: auto;
-		font-size: 20px;
-		line-height: 1.6;
-	}
+  main {
+    margin: auto;
+    font-size: 20px;
+    line-height: 1.6;
+  }
 </style>
