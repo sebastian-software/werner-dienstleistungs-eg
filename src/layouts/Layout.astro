@@ -3,6 +3,8 @@
 import "@effective/css-reset/dist/assets/ResetNative.css"
 import "@effective/css-reset/dist/assets/SensibleEnhancements.css"
 import "@effective/css-reset/dist/assets/ResponsiveType.css"
+import wernerLogo from "../assets/werner.svg"
+import { rootClass, headerClass,footerClass, mainClass } from "./Layouts.css"
 
 interface Props {
   title: string
@@ -25,18 +27,15 @@ const { title } = Astro.props
     <title>{title}</title>
   </head>
   <body>
-    <slot />
+<div class={rootClass}>
+    <header class={headerClass}>
+      <a href="/"><img src={wernerLogo.src} alt="Werner Dienstleistungs eG (In Gründung)" width="400"/></a>
+    </header>
+    <main class={mainClass}>
+    <slot /></main>
+    <footer class={footerClass}>
+      <p>&copy; 2024 Werner Dienstleistungs eG | <a href="./imprint">Impressum</a></p>
+    </footer>
+  </div>
   </body>
 </html>
-
-<style is:global>
-  main {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 2rem;
-  }
-  footer {
-    padding: 2rem;
-  }
-</style>

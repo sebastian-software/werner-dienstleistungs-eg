@@ -1,11 +1,11 @@
 import { style } from "@vanilla-extract/css"
 
 export const rootClass = style({
-  fontSize: "1.5rem",
+  fontSize: "1.25rem",
 
   selectors: {
     "h1&": {
-      fontSize: "2rem"
+      fontSize: "1.5rem"
     }
   }
 })
