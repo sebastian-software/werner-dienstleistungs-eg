@@ -6,7 +6,7 @@ export default {
   // In ESLint we allow for code being 110 character long, comments 140 characters.
   // With auto formatting in place and the current heuristics of prettier it works
   // better with a default of 80 characters per line though. (default = 80)
-  printWidth: 80,
+  printWidth: 120,
 
   // Use two spaces for tabs (default = 2)
   tabWidth: 2,
@@ -40,8 +40,8 @@ export default {
     {
       files: "*.astro",
       options: {
-        parser: "astro",
-      },
-    },
-  ],
-};
+        parser: "astro"
+      }
+    }
+  ]
+}

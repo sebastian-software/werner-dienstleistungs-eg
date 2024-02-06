@@ -8,7 +8,8 @@
     "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "optimize:svg": "svgo -r -f src"
+    "optimize:svg": "svgo -r -f src",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "@astrojs/check": "^0.4.1",
