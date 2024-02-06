@@ -1,12 +1,51 @@
 ---
 import Layout from "../layouts/Layout.astro"
 import divkLogo from "../assets/divk-logo.svg"
+import sebastianLogo from "../assets/sebastian-software.svg"
 import Header from "../components/Header.astro"
+import Paragraph from "../components/Paragraph.astro"
 ---
 
 <Layout title="Werner Dienstleistungs eG">
   <Header>Werner Dienstleistungs eG (In Gründung)</Header>
-  <p>
-    Mitglied im: <br /><img src={divkLogo.src} width="300" alt="DIVK Logo" />
-  </p>
+  <Paragraph>
+    Willkommen bei der Werner Dienstleistung eG – Ihr kompetenter Partner für professionelle Büro-, Verwaltungs- und
+    IT-Dienstleistungen. Mit jahrelanger Erfahrung und einem Team aus hochqualifizierten Fachkräften bieten wir
+    maßgeschneiderte Lösungen, die speziell auf die Bedürfnisse und Anforderungen Ihres Unternehmens zugeschnitten sind.</Paragraph
+  >
+
+  <Header as="h2">Büro- und Verwaltungsdienstleistungen:</Header>
+  <Paragraph
+    >Unser Angebot im Bereich Büro- und Verwaltungsdienstleistungen umfasst ein breites Spektrum an Services, die darauf
+    abzielen, Ihre administrativen Prozesse zu optimieren und zu vereinfachen. Von der Dokumentenverwaltung über die
+    Buchhaltung bis hin zum Sekretariatsservice bieten wir Ihnen alles, was Sie benötigen, um Ihren Büroalltag
+    effizienter zu gestalten. Lassen Sie uns die Routinearbeiten übernehmen, sodass Sie sich voll und ganz auf Ihr
+    Kerngeschäft konzentrieren können.</Paragraph
+  >
+
+  <Header as="h2">IT-Dienstleistungen:</Header>
+  <Paragraph
+    >In der heutigen digitalen Welt sind zuverlässige IT-Dienstleistungen unerlässlich für den Erfolg eines jeden
+    Unternehmens. Die Werner Dienstleistung eG steht Ihnen mit einem umfassenden Angebot an IT-Services zur Seite. Von
+    der Systemadministration über Netzwerklösungen bis hin zur Softwareentwicklung und -wartung – wir sorgen dafür, dass
+    Ihre IT-Infrastruktur reibungslos funktioniert und stets auf dem neuesten Stand der Technik ist. Unsere Experten
+    arbeiten eng mit Ihnen zusammen, um individuelle Lösungen zu entwickeln, die Ihre spezifischen Geschäftsziele
+    unterstützen.</Paragraph
+  >
+
+  <Header as="h2">Über die Genossenschaft</Header>
+  <Paragraph>
+    Das Wesen der Genossenschaftsidee, die Selbsthilfe, Selbstverwaltung, Solidarprinzip, Nachhaltigkeit, Subsidiarität
+    und das Identitätsprinzip, ist für uns das wichtige Fundament für unser Handeln und Tun. <q
+      >Was einer nicht schafft, dass schaffen viele.</q
+    >
+  </Paragraph>
+  <Paragraph>
+    Mitglied im: <br /><br />
+    <img src={divkLogo.src} width="400" alt="DIVK Logo" />
+  </Paragraph>
+  <Paragraph>
+    Partner von: <br /><br />
+    <img src={sebastianLogo.src} width="400" alt="Sebastian Software GmbH" />
+  </Paragraph>
 </Layout>

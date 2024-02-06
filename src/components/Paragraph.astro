@@ -1,0 +1,12 @@
+---
+import { rootClass } from "./Paragraph.css"
+
+interface Props {
+  as?: string
+}
+
+const { as } = Astro.props
+const ParagraphTag = as || "p"
+---
+
+<ParagraphTag class={rootClass}><slot /></ParagraphTag>
