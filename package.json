@@ -15,16 +15,16 @@
     "update:pnpm": "corepack up"
   },
   "dependencies": {
-    "@astrojs/check": "^0.4.1",
-    "@effective/css-reset": "^1.0.2",
-    "astro": "^4.3.2",
-    "typescript": "^5.3.3"
+    "@astrojs/check": "^0.5.9",
+    "@effective/css-reset": "^2.0.3",
+    "astro": "^4.5.5",
+    "typescript": "^5.4.2"
   },
   "packageManager": "pnpm@8.15.5+sha256.4b4efa12490e5055d59b9b9fc9438b7d581a6b7af3b5675eb5c5f447cee1a589",
   "devDependencies": {
-    "@astrojs/vercel": "^7.1.1",
+    "@astrojs/vercel": "^7.3.6",
     "@vanilla-extract/css": "^1.14.1",
-    "@vanilla-extract/vite-plugin": "^4.0.3",
+    "@vanilla-extract/vite-plugin": "^4.0.6",
     "npm-check-updates": "^16.14.17",
     "prettier": "^3.2.5",
     "prettier-plugin-astro": "^0.13.0",

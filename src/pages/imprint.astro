@@ -1,35 +1,54 @@
 ---
 import Header from "../components/Header.astro"
 import Layout from "../layouts/Layout.astro"
+
+import divkLogo from "../assets/divk-logo.svg"
 ---
 
 <Layout title="Impressum">
   <Header>Impressum</Header>
-  <Header as="h2">Angaben gemäß § 5 TMG</Header>
+
+  <p>Angaben gemäß § 5 TMG</p>
+
+  <Header as="h2">Anbieter</Header>
   <p>
-    Werner Dienstleistungs eG (In Gründung)<br />Hohensachsener Str. 7<br />69493 Hirschberg a. d. B.
+    Werner Dienstleistungs eG<br />Hohensachsener Str. 7<br />69493 Hirschberg a. d. B.
   </p>
+
   <Header as="h2">Registergericht</Header>
   <p>
-    Genossenschaftsregister: <em>ausstehend</em><br />
-    Registergericht: <em>ausstehend</em>
+    Registergericht: Amtsgericht Mannheim<br />
+    Genossenschaftsregister: 700174<br />
+    Sitz der Genossenschaft: Hirschberg a. d. B.<br />
   </p>
-  <Header as="h2">Vertreten durch</Header>
+
+  <Header as="h2">Vertreten durch den Vorstand</Header>
   <p>Sebastian Werner</p>
+
+  <Header as="h2">Rechtsform</Header>
+  <p>Eingetragene Genossenschaft</p>
+
   <Header as="h2">Kontakt</Header>
   <p>
     Telefon: 0151-22631309<br />
     E-Mail: info@werner-dienstleistung.de
   </p>
+
   <Header as="h2">Umsatzsteuer-ID</Header>
   <p>
     Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz: <em>ausstehend</em>
   </p>
+
+  <Header as="h2">Prüfungsverbund</Header>
+  <img src={divkLogo.src} width="250" alt="DIVK Logo" />
+  <p>Zuständiger Prüfungsverband nach § 54 GenG ist: Deutscher Interessenverband der Kleingenossenschaften e.V.</p>
+
   <Header as="h2">EU-Streitschlichtung</Header>
   <p>
     Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:
     https://ec.europa.eu/consumers/odr/. Unsere E-Mail-Adresse finden Sie oben im Impressum.
   </p>
+
   <Header as="h2">Verbraucherstreitbeilegung/Universalschlichtungsstelle</Header>
   <p>
     Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle

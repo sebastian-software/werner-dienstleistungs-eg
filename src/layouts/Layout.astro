@@ -2,7 +2,7 @@
 // FIXME: Simplify imports
 import "@effective/css-reset/dist/assets/ResetNative.css"
 import "@effective/css-reset/dist/assets/SensibleEnhancements.css"
-import "@effective/css-reset/dist/assets/ResponsiveType.css"
+
 import favIcon from "../assets/favicon.svg"
 import wernerLogo from "../assets/werner.svg"
 import { rootClass, headerClass, footerClass, mainClass } from "./Layouts.css"
@@ -18,7 +18,7 @@ const { title } = Astro.props
 <html lang="de">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Werner Dienstleistungs eG (In Gründung)" />
+    <meta name="description" content="Werner Dienstleistungs eG" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href={favIcon.src} />
     <meta name="generator" content={Astro.generator} />
@@ -27,7 +27,7 @@ const { title } = Astro.props
   <body>
     <div class={rootClass}>
       <header class={headerClass}>
-        <a href="/"><img src={wernerLogo.src} alt="Werner Dienstleistungs eG (In Gründung)" width="400" /></a>
+        <a href="/"><img src={wernerLogo.src} alt="Werner Dienstleistungs eG" width="400" /></a>
       </header>
       <main class={mainClass}>
         <slot />

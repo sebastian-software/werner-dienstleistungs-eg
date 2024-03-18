@@ -2,10 +2,12 @@ import { style } from "@vanilla-extract/css"
 
 export const rootClass = style({
   fontSize: "1.25rem",
+  fontWeight: "bold",
 
   selectors: {
     "h1&": {
-      fontSize: "1.5rem"
+      fontWeight: "normal",
+      fontSize: "2.5rem"
     }
   }
 })
