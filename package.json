@@ -9,7 +9,10 @@
     "preview": "astro preview",
     "astro": "astro",
     "optimize:svg": "svgo -r -f src",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "update:latest": "ncu --deep  --upgrade --interactive",
+    "update:minor": "ncu --deep  --upgrade --interactive --target minor",
+    "update:pnpm": "corepack up"
   },
   "dependencies": {
     "@astrojs/check": "^0.4.1",
@@ -17,10 +20,12 @@
     "astro": "^4.3.2",
     "typescript": "^5.3.3"
   },
+  "packageManager": "pnpm@8.15.5+sha256.4b4efa12490e5055d59b9b9fc9438b7d581a6b7af3b5675eb5c5f447cee1a589",
   "devDependencies": {
     "@astrojs/vercel": "^7.1.1",
     "@vanilla-extract/css": "^1.14.1",
     "@vanilla-extract/vite-plugin": "^4.0.3",
+    "npm-check-updates": "^16.14.17",
     "prettier": "^3.2.5",
     "prettier-plugin-astro": "^0.13.0",
     "svgo": "^3.2.0"
